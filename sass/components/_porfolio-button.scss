@@ -1,0 +1,31 @@
+.list-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+button {
+  transition: $time-function;
+  display: inline-block;
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 6px 22px;
+
+  background-color: #f5f4fa;
+  color: $title-text-color;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $background-color;
+  }
+}
+
+.list-button .item + .item {
+  margin-left: 8px;
+}

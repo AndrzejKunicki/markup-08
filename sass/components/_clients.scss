@@ -1,0 +1,38 @@
+.section .section-clients {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section-clients {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.section-clients + .list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list .link {
+  transition: $time-function;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: #afb1b8;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+}

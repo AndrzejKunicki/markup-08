@@ -1,0 +1,150 @@
+footer {
+  background-color: #2f303a;
+}
+
+footer b {
+  color: $background-color;
+}
+
+footer .logo {
+  color: $background-color;
+  font-family: $secondary-text-family, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+footer span,
+footer .logo:focus {
+  transition: $time-function;
+  color: $accent-color;
+}
+
+/*Футер адрес*/
+footer > div.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address-list {
+  margin-top: 20px;
+}
+.address-list > span {
+  color: $background-color;
+}
+
+.address-list .link {
+  transition: $time-function;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+footer b {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-box {
+  margin-left: 69px;
+  margin-top: 12px;
+}
+
+.footer-box .list {
+  margin-top: 20px;
+}
+
+footer > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-box .list-item:not(:first-child) {
+  margin-left: 10px;
+}
+.footer-box .link-item {
+  transition: $time-function;
+  display: block;
+  content: '';
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.icon-instagram {
+  background-image: url(../images/instagram.svg);
+}
+
+.icon-twitter {
+  background-image: url(../images/twitter.svg);
+}
+
+.icon-facebook {
+  background-image: url(../images/facebook.svg);
+}
+
+.icon-linkedin {
+  background-image: url(../images/linkedin.svg);
+}
+
+footer .display {
+  display: flex;
+}
+
+b + ul {
+  display: flex;
+}
+
+.form-subscribe {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 15px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 12px;
+}
+
+.subscribe .hero-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 28px;
+  margin-left: 12px;
+  margin-top: 42px;
+}
+
+.subscribe .hero-button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-image: url(../images/telegram.svg);
+}
