@@ -6,6 +6,12 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .advantages p {
@@ -14,7 +20,12 @@
 }
 
 .advantages .item {
-  width: 270px;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
 }
 
 .advantages .item::before {
@@ -44,15 +55,43 @@
   background-image: url(../images/astronaut.svg);
 }
 
-.advantages .item + .item {
-  margin-left: 30px;
+.advantages .item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .advantages .list {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $tablet) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
+.advantages .item {
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+    // display: flex;
+    // // flex-wrap: wrap;
+  }
+}
+
+// .advantages .item + .item {
+//   @media screen and (min-width: $desktop) {
+//     margin-left: 30px;
+//   }
+// }
+
+// .advantages .list {
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
+
 .advantages.padding {
-  padding-bottom: 0;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }

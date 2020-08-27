@@ -52,57 +52,26 @@ img {
   overflow: hidden;
 }
 
-.site-nav .logo {
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-right: 85px;
-  color: #000000;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-.logo:hover {
-  color: #2196f3;
-}
-
-.container {
-  width: 1200px;
-  margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*site-nav*/
 header {
   border-bottom: 1px solid #ececec;
 }
 
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
 }
 
-.site-nav .item:not(:last-child) {
+.list-link .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav span,
-.logo:focus {
-  color: #2196f3;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.list-link {
+  margin-left: 85px;
 }
 
-.site-nav a {
+.list-link a {
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -143,7 +112,7 @@ header .link:hover, header .link:focus {
   color: #2196f3;
 }
 
-header > div {
+header > .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,14 +121,20 @@ header > div {
           align-items: flex-end;
 }
 
-.contacts,
-.site-nav .list {
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    display: none;
+  }
+}
+
+.contacts-list,
+.list-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contacts .link {
+.contacts-list .link {
   padding-top: 32px;
   padding-bottom: 32px;
   color: #757575;
@@ -169,15 +144,15 @@ header > div {
   letter-spacing: 0.02em;
 }
 
-.contacts li:first-child {
+.contacts-list li:first-child {
   margin-right: 30px;
 }
 
-.contacts img {
+.contacts-list img {
   margin-right: 10px;
 }
 
-.contacts.list > li {
+.contacts-list.list > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,7 +161,7 @@ header > div {
           align-items: center;
 }
 
-.contacts.list {
+.contacts-list.list {
   margin-left: auto;
 }
 
@@ -337,21 +312,6 @@ footer {
 
 footer b {
   color: #ffffff;
-}
-
-footer .logo {
-  color: #ffffff;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-footer span,
-footer .logo:focus {
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #2196f3;
 }
 
 /*Футер адрес*/

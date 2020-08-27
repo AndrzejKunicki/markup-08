@@ -19,8 +19,16 @@ body {
   line-height: 1.71;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
 }
 
 .list {
@@ -30,10 +38,11 @@ a {
 }
 
 .padding {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-img {
-  display: block;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

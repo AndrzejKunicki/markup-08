@@ -1,0 +1,30 @@
+.page-logo {
+  transition: $time-function;
+  color: #000000;
+  font-family: $secondary-text-family, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  margin-bottom: auto;
+  margin-top: auto;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+.page-logo:hover,
+.page-logo:focus {
+  color: $accent-color;
+}
+
+.logo-span {
+  color: $accent-color;
+}
+
+footer .page-logo {
+  color: $background-color;
+}
