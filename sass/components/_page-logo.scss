@@ -10,6 +10,9 @@
   margin-bottom: auto;
   margin-top: auto;
 
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
   @media screen and (min-width: $desktop) {
     font-size: 26px;
     line-height: 1.2;
@@ -23,8 +26,15 @@
 
 .logo-span {
   color: $accent-color;
+  @media screen and (min-width: $tablet) {
+    margin-right: 6px;
+  }
 }
 
 footer .page-logo {
   color: $background-color;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-left: 24px;
+  }
 }

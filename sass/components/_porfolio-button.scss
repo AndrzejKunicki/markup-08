@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
 
+  @media screen and (max-width: 479px) {
+    margin: -8px;
+  }
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
   }
@@ -36,18 +40,24 @@
   }
 }
 
+.list-button .item {
+  @media screen and (max-width: 479px) {
+    margin: 8px;
+  }
+}
+
 .list-button .item + .item {
   margin-left: 8px;
 }
 
 .list-button .item + .item:nth-child(4n) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) and (min-width: $mobile) {
     margin-left: 0px;
   }
 }
 
 .list-button .item + .item:nth-last-child(-n + 2) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) and (min-width: $mobile) {
     margin-top: 15px;
   }
 }
